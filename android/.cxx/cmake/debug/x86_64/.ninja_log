@@ -1,0 +1,23 @@
+# ninja log v5
+0	174	1631108921	CMakeFiles/median_cut.dir/cpp/median_cut.cpp.o	761a1304339561fd
+174	183	1631108921	/home/deimos/Documents/workspace/FLUTTER/libs/median_cut/example/build/median_cut/intermediates/cmake/debug/obj/x86_64/libmedian_cut.so	e7054a0e4771ec71
+0	9	1631110289	build.ninja	171cffbbe96da059
+0	3	0	clean	a31e3215517e18ab
+0	11	1631110309	build.ninja	171cffbbe96da059
+0	2	0	clean	a31e3215517e18ab
+0	133	1631110439	CMakeFiles/median_cut.dir/cpp/median_cut.cpp.o	761a1304339561fd
+0	224	1631110439	CMakeFiles/median_cut.dir/cpp/algo.cpp.o	772407253f17e783
+224	247	1631110439	/home/deimos/Documents/workspace/FLUTTER/libs/median_cut/example/build/median_cut/intermediates/cmake/debug/obj/x86_64/libmedian_cut.so	2e5deee55a1c4755
+0	156	1631113491	CMakeFiles/median_cut.dir/cpp/median_cut.cpp.o	761a1304339561fd
+156	176	1631113491	/home/deimos/Documents/workspace/FLUTTER/libs/median_cut/example/build/median_cut/intermediates/cmake/debug/obj/x86_64/libmedian_cut.so	2e5deee55a1c4755
+0	11	1631113890	build.ninja	171cffbbe96da059
+0	157	1631113890	CMakeFiles/median-cut.dir/cpp/median_cut.cpp.o	98bd5294c7c35582
+0	220	1631113890	CMakeFiles/median-cut.dir/cpp/algo.cpp.o	fdce2309cf030092
+220	237	1631113890	/home/deimos/Documents/workspace/FLUTTER/libs/median_cut/example/build/median_cut/intermediates/cmake/debug/obj/x86_64/libmedian-cut.so	af8bb22b698cfafc
+0	8	1631114006	build.ninja	171cffbbe96da059
+0	2	0	clean	a31e3215517e18ab
+0	156	1631114108	CMakeFiles/median_cut.dir/cpp/median_cut.cpp.o	761a1304339561fd
+0	221	1631114108	CMakeFiles/median_cut.dir/cpp/algo.cpp.o	772407253f17e783
+221	240	1631114108	/home/deimos/Documents/workspace/FLUTTER/libs/median_cut/example/build/median_cut/intermediates/cmake/debug/obj/x86_64/libmedian_cut.so	2e5deee55a1c4755
+1	159	1631118273	CMakeFiles/median_cut.dir/cpp/median_cut.cpp.o	761a1304339561fd
+159	176	1631118273	/home/deimos/Documents/workspace/FLUTTER/libs/median_cut/example/build/median_cut/intermediates/cmake/debug/obj/x86_64/libmedian_cut.so	2e5deee55a1c4755

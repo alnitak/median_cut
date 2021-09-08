@@ -1,0 +1,26 @@
+# ninja log v5
+0	182	1631108921	CMakeFiles/median_cut.dir/cpp/median_cut.cpp.o	82a1bab7567f51ca
+182	194	1631108921	/home/deimos/Documents/workspace/FLUTTER/libs/median_cut/example/build/median_cut/intermediates/cmake/debug/obj/arm64-v8a/libmedian_cut.so	2ee3169fed30797c
+0	165	1631109959	CMakeFiles/median_cut.dir/cpp/median_cut.cpp.o	82a1bab7567f51ca
+0	134	1631110148	CMakeFiles/median_cut.dir/cpp/median_cut.cpp.o	82a1bab7567f51ca
+0	8	1631110289	build.ninja	92285a10c53b3146
+0	2	0	clean	a31e3215517e18ab
+1	134	1631110290	CMakeFiles/median_cut.dir/cpp/median_cut.cpp.o	82a1bab7567f51ca
+0	8	1631110309	build.ninja	92285a10c53b3146
+0	3	0	clean	a31e3215517e18ab
+0	130	1631110310	CMakeFiles/median_cut.dir/cpp/median_cut.cpp.o	82a1bab7567f51ca
+0	233	1631110439	CMakeFiles/median_cut.dir/cpp/algo.cpp.o	c518899e9085b786
+233	275	1631110439	/home/deimos/Documents/workspace/FLUTTER/libs/median_cut/example/build/median_cut/intermediates/cmake/debug/obj/arm64-v8a/libmedian_cut.so	970649062137a644
+0	156	1631113491	CMakeFiles/median_cut.dir/cpp/median_cut.cpp.o	82a1bab7567f51ca
+156	188	1631113491	/home/deimos/Documents/workspace/FLUTTER/libs/median_cut/example/build/median_cut/intermediates/cmake/debug/obj/arm64-v8a/libmedian_cut.so	970649062137a644
+0	8	1631113889	build.ninja	92285a10c53b3146
+0	158	1631113889	CMakeFiles/median-cut.dir/cpp/median_cut.cpp.o	150ea83cc7d78c6c
+0	231	1631113889	CMakeFiles/median-cut.dir/cpp/algo.cpp.o	d53b83966ce54605
+231	263	1631113889	/home/deimos/Documents/workspace/FLUTTER/libs/median_cut/example/build/median_cut/intermediates/cmake/debug/obj/arm64-v8a/libmedian-cut.so	761dec087e9be66e
+0	10	1631114006	build.ninja	92285a10c53b3146
+0	2	0	clean	a31e3215517e18ab
+0	158	1631114107	CMakeFiles/median_cut.dir/cpp/median_cut.cpp.o	82a1bab7567f51ca
+0	232	1631114108	CMakeFiles/median_cut.dir/cpp/algo.cpp.o	c518899e9085b786
+233	266	1631114108	/home/deimos/Documents/workspace/FLUTTER/libs/median_cut/example/build/median_cut/intermediates/cmake/debug/obj/arm64-v8a/libmedian_cut.so	970649062137a644
+0	161	1631118272	CMakeFiles/median_cut.dir/cpp/median_cut.cpp.o	82a1bab7567f51ca
+161	194	1631118272	/home/deimos/Documents/workspace/FLUTTER/libs/median_cut/example/build/median_cut/intermediates/cmake/debug/obj/arm64-v8a/libmedian_cut.so	970649062137a644

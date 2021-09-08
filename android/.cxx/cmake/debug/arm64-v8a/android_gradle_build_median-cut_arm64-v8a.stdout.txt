@@ -1,0 +1,8 @@
+ninja: Entering directory `/home/deimos/Documents/workspace/FLUTTER/libs/median_cut/android/.cxx/cmake/debug/arm64-v8a'
+[0/1] Re-running CMake...
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/deimos/Documents/workspace/FLUTTER/libs/median_cut/android/.cxx/cmake/debug/arm64-v8a
+[1/3] Building CXX object CMakeFiles/median-cut.dir/cpp/median_cut.cpp.o
+[2/3] Building CXX object CMakeFiles/median-cut.dir/cpp/algo.cpp.o
+[3/3] Linking CXX shared library /home/deimos/Documents/workspace/FLUTTER/libs/median_cut/example/build/median_cut/intermediates/cmake/debug/obj/arm64-v8a/libmedian-cut.so

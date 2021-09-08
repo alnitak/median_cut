@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/home/deimos/Documents/workspace/FLUTTER/libs/median_cut/android/CMakeLists.txt",
+    "/home/deimos/Android/Sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/home/deimos/Android/Sdk/ndk/21.1.6352462/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/home/deimos/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/deimos/Documents/workspace/FLUTTER/libs/median_cut/android/.cxx/cmake/debug/x86\" clean"
+  ],
+  "buildTargetsCommand": "/home/deimos/Android/Sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/home/deimos/Documents/workspace/FLUTTER/libs/median_cut/android/.cxx/cmake/debug/x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "median_cut-Debug-x86": {
+      "artifactName": "median_cut",
+      "buildCommand": "/home/deimos/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/deimos/Documents/workspace/FLUTTER/libs/median_cut/android/.cxx/cmake/debug/x86\" median_cut",
+      "abi": "x86",
+      "output": "/home/deimos/Documents/workspace/FLUTTER/libs/median_cut/example/build/median_cut/intermediates/cmake/debug/obj/x86/libmedian_cut.so",
+      "runtimeFiles": []
+    }
+  }
+}

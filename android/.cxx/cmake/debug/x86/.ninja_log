@@ -1,0 +1,6 @@
+# ninja log v5
+0	157	1631114108	CMakeFiles/median_cut.dir/cpp/median_cut.cpp.o	36617670d4f3556b
+0	230	1631114108	CMakeFiles/median_cut.dir/cpp/algo.cpp.o	382b17d05d4cb57c
+230	248	1631114108	/home/deimos/Documents/workspace/FLUTTER/libs/median_cut/example/build/median_cut/intermediates/cmake/debug/obj/x86/libmedian_cut.so	46eb71783a91e707
+0	157	1631118273	CMakeFiles/median_cut.dir/cpp/median_cut.cpp.o	36617670d4f3556b
+157	171	1631118273	/home/deimos/Documents/workspace/FLUTTER/libs/median_cut/example/build/median_cut/intermediates/cmake/debug/obj/x86/libmedian_cut.so	46eb71783a91e707
