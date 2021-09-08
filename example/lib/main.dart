@@ -20,8 +20,8 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   final stopwatch = Stopwatch();
   Duration elapsed = Duration.zero;
-  List<Color> palette = [];
-  int numPaletteColors = 10;
+  List<Palette> palette = [];
+  int numPaletteColors = 8;
 
   @override
   Widget build(BuildContext context) {
@@ -73,10 +73,11 @@ class _MyAppState extends State<MyApp> {
                               Container(
                                 width: 60,
                                 height: 30,
-                                color: palette.elementAt(index),
+                                color: palette.elementAt(index).color,
                               ),
                               SizedBox(width: 10),
-                              Text(palette.elementAt(index).toString()),
+                              Text('${palette.elementAt(index).color}   '
+                                  '${palette.elementAt(index).percentage.toStringAsFixed(2)}%'),
                             ],
                           )
                       ),

@@ -1,6 +1,7 @@
 //#include <jni.h>
 //#include <android/log.h>
 
+#include <android/log.h>
 #include "algo.h"
 
 //#define JAVA(X) JNIEXPORT Java_com_bavagnoli_median_1cut_JNIWrapper_##X
@@ -22,29 +23,30 @@ extern "C" {
 
 
 
-void getPalette(int32_t numColors, uint8_t *imgBuffer, int64_t imgBufferLength, uint8_t *palette) {
+void getPalette(int32_t numColors, uint8_t *imgBuffer, int64_t imgBufferLength, uint8_t *palette, double *percentages) {
     std::vector<P> source;
     for (int i=0; i<imgBufferLength; ++i) {
         source.push_back(
             (P) {
-                    imgBuffer[i],
-                    imgBuffer[++i],
-                    imgBuffer[++i],
-                    imgBuffer[++i]
+                imgBuffer[i],
+                imgBuffer[++i],
+                imgBuffer[++i],
+                imgBuffer[++i]
             }
         );
     }
     std::vector<P> ret = median_cut_generate_palette(source, numColors);
 
     for (int i=0; i<numColors; i++) {
+//        __android_log_print(ANDROID_LOG_DEBUG, "median_cut",
+//                            "result perc: %d  %f",
+//                            i, ret[i].size);
         palette[i*4]     = ret[i].b;
         palette[i*4 + 1] = ret[i].g;
         palette[i*4 + 2] = ret[i].r;
         palette[i*4 + 3] = ret[i].a;
+        percentages[i]   = ret[i].size;
     }
-
-    bool b;
-    b= true;
 }
 
 

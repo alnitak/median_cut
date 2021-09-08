@@ -5,6 +5,7 @@
 // From
 // https://indiegamedev.net/2020/01/17/median-cut-with-floyd-steinberg-dithering-in-c/
 
+#include <android/log.h>
 
 #include "algo.h"
 
@@ -119,6 +120,7 @@ std::vector<P> median_cut_generate_palette(const std::vector<P>& source, const s
 
     // each box in boxes can be averaged to determine the colour
     std::vector<P> palette;
+    double totSize = 0;
     for(const RangeBox& boxData : boxes)
     {
         Box box = std::get<1>(boxData);
@@ -133,18 +135,29 @@ std::vector<P> median_cut_generate_palette(const std::vector<P>& source, const s
             blueAccum += p.b;
             alphaAccum += p.a;
         });
+
         redAccum /= static_cast<std::uint_fast32_t>(box.size());
         greenAccum /= static_cast<std::uint_fast32_t>(box.size());
         blueAccum /= static_cast<std::uint_fast32_t>(box.size());
         alphaAccum /= static_cast<std::uint_fast32_t>(box.size());
+
+        totSize += box.size();
 
         palette.push_back(
             {
                 static_cast<std::uint8_t>(std::min<std::uint8_t>(blueAccum, 255u)),
                 static_cast<std::uint8_t>(std::min<std::uint8_t>(greenAccum, 255u)),
                 static_cast<std::uint8_t>(std::min<std::uint8_t>(redAccum, 255u)),
-                static_cast<std::uint8_t>(std::min<std::uint8_t>(alphaAccum, 255u))
+                static_cast<std::uint8_t>(std::min<std::uint8_t>(alphaAccum, 255u)),
+                static_cast<double>(box.size())
             });
     }
+
+    // calculate size percentages
+    std::for_each(palette.begin(),palette.end(),[&](P& p)
+        {
+            p.size = p.size/totSize * 100.0;
+        });
+
     return palette;
 }

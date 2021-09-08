@@ -15,6 +15,7 @@ struct P
     std::uint8_t g;
     std::uint8_t r;
     std::uint8_t a;
+    double size;
 };
 
 std::vector<P> median_cut_generate_palette(const std::vector<P>& source, const std::uint_fast32_t numColors);
