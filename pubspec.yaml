@@ -1,6 +1,6 @@
 name: median_cut
 description: Median Cut image color reducer using FFI
-version: 0.0.1
+version: 1.0.0
 homepage:
 
 environment:
