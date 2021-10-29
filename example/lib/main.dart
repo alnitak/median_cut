@@ -36,7 +36,7 @@ class _MyAppState extends State<MyApp> {
                 SizedBox(
                     width: 300,
                     height: 300,
-                    child: Image.asset('assets/landscape-scene.jpeg',
+                    child: Image.asset('assets/vscode2.png',
                         fit: BoxFit.scaleDown)),
 
                 /// buttons
@@ -47,10 +47,10 @@ class _MyAppState extends State<MyApp> {
                       onPressed: () async {
                         stopwatch.start();
                         final ByteData assetImageByteData = await rootBundle
-                            .load('assets/landscape-scene.jpeg');
+                            .load('assets/vscode2.png');
                         image.Image? baseSizeImage = image.decodeImage(
                             assetImageByteData.buffer.asUint8List());
-                        Uint8List imgBuffer = baseSizeImage!.getBytes();
+                        Uint8List imgBuffer = baseSizeImage!.getBytes(format: image.Format.bgra);
 
                         MedianCut.medianCut(numPaletteColors, imgBuffer)
                             .then((value) {
@@ -91,10 +91,10 @@ class _MyAppState extends State<MyApp> {
                   ],
                 ),
 
-                /// draw samples color values
+                /// draw sample color values
                 if (palette.length > 0) Text('Elapsed: $elapsed'),
 
-                /// draw samples colors
+                /// draw sample colors
                 if (palette.length > 0)
                   Padding(
                     padding: const EdgeInsets.all(8.0),

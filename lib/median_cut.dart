@@ -61,7 +61,7 @@ Future<List<Palette>> _isolateCallBack(Map<int, dynamic> args) {
         palette.elementAt(i * 4 + 3).value,
         palette.elementAt(i * 4 + 2).value,
         palette.elementAt(i * 4 + 1).value,
-        palette.elementAt(i * 4).value);
+        palette.elementAt(i * 4    ).value);
     ret.add(Palette(c, c.computeLuminance(), percentages.elementAt(i).value));
   }
 
@@ -78,7 +78,7 @@ class MedianCut {
   /// Compute image median-cut palette
   ///
   /// [numcolors]: number of colors to be computed
-  /// [imgBuffer]: raw image pixels data. Colors sequence must be in rgba format
+  /// [imgBuffer]: raw image pixels data. Colors sequence must be in bgra format
   ///
   static Future<List<Palette>> medianCut(
           int numColors, Uint8List imgBuffer) async =>
